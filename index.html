@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23172c38%27/%3E%3Ctext x=%276%27 y=%2724%27 fill=%27%23e7c773%27 font-size=%2724%27%3ES%3C/text%3E%3C/svg%3E">
+  <title>School Brawler · Courtyard Sessions</title>
+  <script type="module" crossorigin src="./assets/index-D_dRTVUP.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DzLl5i3P.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div><span class="eyebrow">HONG KONG ARCADE CLUB / BEST OF THREE</span><h1>SCHOOL<span> BRAWLER</span></h1></div>
+      <div class="edition"><i></i> <span id="active-mode">VS CPU · NORMAL</span><small>COURTYARD SPARRING</small></div>
+    </header>
+    <section id="game" aria-label="School brawler"></section>
+    <section class="toolbar">
+      <div class="roster">
+        <label>Mode <select id="mode"><option value="cpu" selected>VS CPU</option><option value="local">2 Players</option><option value="coop">2P Co-op</option><option value="coop-cpu">1P + CPU Co-op</option></select></label>
+        <label>AI Level <select id="difficulty"><option value="easy">Easy</option><option value="normal" selected>Normal</option><option value="hard">Hard</option></select></label>
+        <label>P1 <select id="p1"><option value="sum">SUM · Balanced</option><option value="leo">LEO · Pokémon卡炒家</option><option value="chau">CHAU · Defence</option></select></label>
+        <span id="match-separator">VS</span>
+        <label><span id="opponent-label">CPU</span> <select id="p2"><option value="leo">LEO · Speed</option><option value="sum">SUM · Balanced</option><option value="chau">CHAU · Defence</option></select></label>
+        <label>Stage <select id="stage"><option value="school">校門長樓梯</option></select></label>
+      </div>
+      <div><button id="sound">Sound: ON</button><button id="restart">Restart match ↗</button></div>
+    </section>
+    <p id="mode-help" class="mode-help" role="status">VS CPU active · You control P1. The opponent moves and fights automatically.</p>
+    <footer>
+      <div><b>01 / PLAYER ONE</b><p><kbd>W A S D</kbd> Move <kbd>J</kbd> Punch <kbd>K</kbd> Kick <kbd>I</kbd> Block <kbd>SPACE</kbd> Jump <kbd>LEFT SHIFT</kbd> Hold to sprint <kbd>H + WASD</kbd> Move & charge / Shift to sprint</p></div>
+      <div id="p2-controls"><b>02 / PLAYER TWO</b><p><kbd>↑ ← ↓ →</kbd> Move <kbd>NUM 1 / 2</kbd> Punch / Kick <kbd>NUM 0</kbd> Block <kbd>ENTER</kbd> Jump <kbd>RIGHT SHIFT</kbd> Hold to sprint <kbd>NUM 5 / B + ↑↓←→</kbd> Move & charge</p><small>No numpad? Use U / O / P for punch / kick / block.</small></div>
+      <div class="hint"><b>MEET IN THE SAME LANE.</b><p>F1 debug · R restart<br>貼身＋方向＋出拳：摔投（空手）<br>按住 J 自動連招：SUM 公文三式 · LEO 快線競投 · CHAU 撥款重拳<br>SUM: L / NUM 3 / M or Punch + Kick<br>L / NUM3: SUM Zone · LEO Kick · CHAU Money<br>G / NUM6 / N: SUM Police · LEO Cards · CHAU AI</p></div>
+    </footer>
+  </main>
+</body>
+</html>
+
